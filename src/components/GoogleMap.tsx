@@ -21,7 +21,7 @@ const GoogleMapComponent = () => {
       googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string}
     >
       <div className="border rounded-lg shadow-md w-full relative">
-        <div className="max-w-[210px]  bg-white absolute z-10 shadow-lg p-4 translate-x-full translate-y-[-50%] flex flex-col justify-center items-center">
+        <div className="max-w-[210px]  bg-white/60 absolute z-10 shadow-lg p-4 right-[20%] flex flex-col justify-center items-center">
           <p className="break-keep">SAT— FRI / 12AM - 4PM</p>
 
           <p className="text-center">Five Star Rd Nairobi, Kenya</p>
