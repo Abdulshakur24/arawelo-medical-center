@@ -1,10 +1,8 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Head from "next/head";
-import Image from "next/image";
 import React, { useState } from "react";
 import { Form } from "semantic-ui-react";
-import AuthLayout from "src/layout/AuthLayout";
 import styled from "styled-components";
 import GoogleMapComponent from "src/components/GoogleMap";
 
