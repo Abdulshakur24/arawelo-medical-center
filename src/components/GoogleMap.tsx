@@ -29,7 +29,7 @@ const GoogleMapComponent = () => {
             href="tel:+254769807070"
             className="mt-1 px-2 py-1 bg-purple-500 rounded text-white"
           >
-            254769807070
+            +254769807070
           </a>
         </div>
         <GoogleMap

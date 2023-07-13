@@ -31,8 +31,6 @@ function Sidebar() {
     150
   );
 
-  console.log(router.asPath);
-
   return (
     <div
       onMouseEnter={() => handleSidebarThrottled(true)}
