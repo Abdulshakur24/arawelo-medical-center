@@ -32,6 +32,7 @@ function Contact() {
       }
     },
   });
+
   return (
     <>
       <Head>
@@ -50,7 +51,7 @@ function Contact() {
             <p>Nairobi, Kenya</p>
             <h3 className="font-bold">Hours</h3>
 
-            <p>Sat – Fri</p>
+            <p>Sat - Fri</p>
             <p>24 Hours a Day</p>
           </div>
           <div className="w-full">

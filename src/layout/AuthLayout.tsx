@@ -12,7 +12,7 @@ function AuthLayout({ children }: { children: ReactNode }) {
       <div className="w-full min-h-screen px-4 pt-2  max-w-[1440px] overflow-x-hidden mx-auto">
         <div className="sm:ml-[64px]">
           {children}
-          <footer className="bg-purple-500 py-2">
+          <footer className="bg-purple-500 py-2 rounded-tl-md rounded-tr-md">
             <div className="mt-2 rounded-t-lg text-white">
               <div className="flex flex-wrap p-4 gap-6  justify-evenly items-start">
                 <div className="w-full max-w-[180px] flex flex-col item-center">
