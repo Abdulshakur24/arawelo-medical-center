@@ -9,7 +9,7 @@ function Blog() {
         <title>Blog</title>
       </Head>
       <div className="w-full flex flex-col gap-4 mb-4">
-        <div className="h-14 bg-gradient-to-r from-purple-500 to-fuchsia-500 flex items-center rounded-lg">
+        <div className="h-14 bg-gradient-to-r from-purple-500 to-fuchsia-500 flex items-center">
           <h1 className="ml-4 font-semibold text-4xl text-white">Blog</h1>
         </div>
         <div className="flex flex-wrap gap-4 justify-center">

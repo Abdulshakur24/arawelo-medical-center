@@ -38,7 +38,10 @@ function Contact() {
       <Head>
         <title>Contact</title>
       </Head>
-      <div className="bg-white p-4 flex flex-col gap-6 my-2 rounded-md shadow">
+      <div className="h-14 bg-gradient-to-r from-purple-500 to-fuchsia-500 flex items-center">
+        <h1 className="ml-4 font-semibold text-4xl text-white">Contact</h1>
+      </div>
+      <div className="bg-white p-4 flex flex-col gap-6 m-4 rounded-md shadow">
         <h1 className="text-3xl">
           Considering one of our services, or just want say hello? we would love
           to hear from you!
@@ -118,8 +121,8 @@ function Contact() {
             </FormWrapper>
           </div>
         </div>
-        <GoogleMapComponent />
       </div>
+      <GoogleMapComponent />
     </>
   );
 }

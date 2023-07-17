@@ -8,15 +8,15 @@ function Services() {
         <title>Services</title>
       </Head>
       <div
-        className="w-full bg-cover bg-center rounded-lg"
+        className="w-full bg-cover bg-center"
         style={{
-          height: "calc(100vh - 16px)",
+          height: "100vh",
           maxHeight: "824px",
           backgroundImage: "url('/images/Arawelo-scaled.jpg')",
         }}
       >
-        <div className="flex items-end justify-start h-full w-full bg-gray-900 bg-opacity-30 rounded-lg">
-          <div className="text-start mb-4 ml-4 md:mb-12 md:ml-12 flex flex-col gap-2">
+        <div className="flex items-end justify-start h-full w-full bg-gray-900 bg-opacity-30">
+          <div className="text-start m-4 md:mb-12 md:ml-12 flex flex-col gap-2">
             <h1 className="text-white text-lg sm:text-2xl font-semibold uppercase md:text-3xl flex gap-3 items-center">
               Medical{" "}
               <span className="underline text-purple-400">Services</span>
@@ -61,7 +61,7 @@ function Services() {
       </div>
       <section
         id="services"
-        className="grid gap-2 grid-cols-1  mt-2 max-w-6xl mx-auto"
+        className="grid gap-2 grid-cols-1 max-w-6xl mx-auto p-4"
       >
         <div className="w-full h-[465px] bg-white p-2 rounded-lg flex items-center">
           <div className="w-full">
@@ -84,9 +84,9 @@ function Services() {
           </div>
           <div className="w-full h-full bg-[url('/images/pexels-evg-kowalievska-1170979.jpg')] bg-no-repeat bg-cover bg-center" />
         </div>
-        <div className="w-full h-[465px] bg-white p-2 rounded-lg flex items-center">
+        <div className="w-full h-[465px] bg-white p-2 rounded-lg flex items-center flex-row-reverse">
           <div className="w-full">
-            <div className="bg-white/80 min-w-[220px]  px-4 py-2 rounded-lg translate-x-[20%] border">
+            <div className="bg-white/80 min-w-[220px]  px-4 py-2 rounded-lg translate-x-[-20%] border">
               <h1 className="text-sm sm:text-base font-semibold uppercase md:text-xl">
                 Emergency Services
               </h1>
@@ -124,9 +124,9 @@ function Services() {
           </div>
           <div className="w-full h-full bg-[url('/images/pexels-anna-shvets-3845126.jpg')] bg-no-repeat bg-cover bg-center" />
         </div>
-        <div className="w-full h-[465px] bg-white p-2 rounded-lg flex items-center">
+        <div className="w-full h-[465px] bg-white p-2 rounded-lg flex items-center flex-row-reverse">
           <div className="w-full">
-            <div className="bg-white/80 min-w-[220px] px-4 py-2 rounded-lg translate-x-[20%] border">
+            <div className="bg-white/80 min-w-[220px] px-4 py-2 rounded-lg translate-x-[-20%] border">
               <h1 className="text-sm sm:text-base font-semibold uppercase md:text-xl">
                 Pediatrics
               </h1>

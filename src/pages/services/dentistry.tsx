@@ -8,7 +8,10 @@ function Dentistry() {
       <Head>
         <title>Dentistry</title>
       </Head>
-      <div className="bg-white p-4 flex flex-col md:flex-row gap-12 my-2 rounded-md shadow">
+      <div className="h-14 bg-gradient-to-r from-purple-500 to-fuchsia-500 flex items-center">
+        <h1 className="ml-4 font-semibold text-4xl text-white">Dentistry</h1>
+      </div>
+      <div className="bg-white p-4 flex flex-col md:flex-row gap-12 m-4 rounded-md shadow">
         <div className="w-full flex flex-col gap-4">
           <h2 className="text-5xl">Dentistry Department</h2>
           <p className="italic">—— Comprehensive dental care for all ages</p>
