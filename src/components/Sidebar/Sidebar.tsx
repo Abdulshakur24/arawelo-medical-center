@@ -37,7 +37,7 @@ function Sidebar() {
       onMouseLeave={() => handleSidebarThrottled(false)}
       className={`${
         toggle.sidebar ? "max-w-[285px]" : "max-w-[65px]"
-      } transition-all duration-500 w-full shadow-lg hidden sm:flex flex-col justify-between fixed top-0 left-0 bottom-0 z-40 bg-white/70 backdrop-filter backdrop-blur-xl`}
+      } transition-all duration-500 w-full shadow-lg hidden sm:flex flex-col justify-between fixed top-0 left-0 bottom-0 z-40 bg-white/70 backdrop-filter backdrop-blur-xl overflow-x-hidden`}
     >
       <div className="relative flex flex-col ">
         <header className={`h-16 transition-all p-4 flex items-center  `}>

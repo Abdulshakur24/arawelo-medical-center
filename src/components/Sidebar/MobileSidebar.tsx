@@ -53,7 +53,7 @@ function MobileSidebar() {
       <div
         className={`${
           toggle.sidebar ? "" : "translate-x-[-100%]"
-        } max-w-[285px] transition-all duration-500 w-full shadow-lg flex-col justify-between fixed top-0 left-0 bottom-0 z-40 bg-white/70 backdrop-filter backdrop-blur-xl overflow-y-auto`}
+        } max-w-[285px] transition-all duration-500 w-full shadow-lg flex-col justify-between fixed top-0 left-0 bottom-0 z-40 bg-white/70 backdrop-filter backdrop-blur-xl overflow-y-auto overflow-x-hidden`}
       >
         <div className="relative flex flex-col ">
           <header className={`h-16 transition-all p-4 flex items-center  `}>
