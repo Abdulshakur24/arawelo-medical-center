@@ -85,51 +85,49 @@ function Sidebar() {
         ))}
       </div>
       <AnimatePresence>
-        {toggle.sidebar && (
-          <motion.div
-            initial={{ opacity: 0, width: "0%" }}
-            animate={{ opacity: 1, width: "100%" }}
-            exit={{ opacity: 0, width: "0%" }}
-            transition={{ duration: 0.15 }}
+        <motion.div
+          initial={{ opacity: 0, width: "0%" }}
+          animate={{ opacity: 1, width: "100%" }}
+          exit={{ opacity: 0, width: "0%" }}
+          transition={{ duration: 0.15 }}
+        >
+          <Link
+            href="/privacy-policy"
+            className={`flex items-center transition-all  duration-300 ${
+              toggle.sidebar ? "px-4 py-4" : "px-2 py-2"
+            } ${
+              router.asPath === "/privacy-policy"
+                ? "bg-purple-500 text-white"
+                : "text-purple-500"
+            }`}
           >
-            <Link
-              href="/privacy-policy"
-              className={`flex items-center transition-all  duration-300 ${
-                toggle.sidebar ? "px-4 py-4" : "px-2 py-2"
-              } ${
-                router.asPath === "/privacy-policy"
-                  ? "bg-purple-500 text-white"
-                  : "text-purple-500"
+            <ShieldIcon
+              strokeWidth="1"
+              stroke={`${
+                router.asPath === "/privacy-policy" ? "white" : "#a855f7"
               }`}
-            >
-              <ShieldIcon
-                strokeWidth="1"
-                stroke={`${
-                  router.asPath === "/privacy-policy" ? "white" : "#a855f7"
-                }`}
-                className={` ml-[8.5px] min-w-[32px]  w-8 h-8  ${
-                  router.asPath === "/privacy-policy"
-                    ? "fill-purple-500"
-                    : "fill-white"
-                }`}
-              />
-              <AnimatePresence>
-                {toggle.sidebar && (
-                  <motion.div
-                    key={1}
-                    initial={{ opacity: 0, width: "0%" }}
-                    animate={{ opacity: 1, width: "100%" }}
-                    exit={{ opacity: 0, width: "0%" }}
-                    transition={{ duration: 0.15 }}
-                    className={`ml-4 `}
-                  >
-                    <h1 className="font-medium">Policy</h1>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </Link>
-          </motion.div>
-        )}
+              className={` ml-[8.5px] min-w-[32px]  w-8 h-8  ${
+                router.asPath === "/privacy-policy"
+                  ? "fill-purple-500"
+                  : "fill-white"
+              }`}
+            />
+            <AnimatePresence>
+              {toggle.sidebar && (
+                <motion.div
+                  key={1}
+                  initial={{ opacity: 0, width: "0%" }}
+                  animate={{ opacity: 1, width: "100%" }}
+                  exit={{ opacity: 0, width: "0%" }}
+                  transition={{ duration: 0.15 }}
+                  className={`ml-4 `}
+                >
+                  <h1 className="font-medium">Policy</h1>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </Link>
+        </motion.div>
       </AnimatePresence>
     </div>
   );
